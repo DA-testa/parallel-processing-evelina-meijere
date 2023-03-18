@@ -1,27 +1,24 @@
 # python3
+import heapq
 
 def parallel_processing(n, m, data):
     output = []
-    laiks = list(data)
-    thread = [0] * n 
+    p = [(0, j) for j in range(n)]
+    heapq.heapify(p)
 
-    for i in range(m):
-        nakamais = thread.index(min(thread))
-        output.append((nakamais, i))
-        thread[nakamais] += laiks[i]
-        
-   
+    for p g in enumarate(data):
+       laiks, b = heapq.heappop(p)
+       output.append((b,laiks))
+       heapq.heappush(p,(laiks + g, thread))
+          
     return output
 
 def main():
-    try:
         n, m = map(int,input().split())
         data = list(map(int, input().split()))
-        output = parallel_processing(n,m,data)
-        for pari in output:
-            print(pari[0],pari[1])
-    except ValueError:
-        print("Kļūda ievadē")
-  
+        result = parallel_processing(n,m,data)
+        for p time in result:
+            print(p, time)
+    
 if __name__ == "__main__":
     main()
