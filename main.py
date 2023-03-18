@@ -17,9 +17,9 @@ def parallel_processing(n, m, data):
 
 def main():
     n, m = map(int,input().split())
-    data = list(map(int, input(). split()))
-    result = parallel_processing(n,m,data)
-    for pari in result:
+    data = list(map(int, input().split()))
+    output = parallel_processing(n,m,data)
+    for pari in output:
         print(pari[0],pari[1])
     # TODO: create input from keyboard
     # input consists of two lines
