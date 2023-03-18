@@ -17,7 +17,7 @@ def main():
         n, m = map(int,input().split())
         data = list(map(int, input().split()))
         result = parallel_processing(n,m,data)
-        for p time in result:
+        for p, time in result:
             print(p, time)
     
 if __name__ == "__main__":
