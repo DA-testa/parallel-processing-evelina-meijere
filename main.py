@@ -5,7 +5,7 @@ def parallel_processing(n, m, data):
     laiks = list(data)
     thread = [0] * n 
 
-    for i in range(k):
+    for i in range(m):
         nakamais = min(range(n), key = lambda x: thread[x])
         out.append((nakamais, i))
         thread[nakamais] += laiks[i]
