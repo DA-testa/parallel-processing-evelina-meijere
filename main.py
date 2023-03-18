@@ -12,7 +12,6 @@ def parallel_processing(n, m, data):
        heapq.heappush(p,(laiks + ti, b))
           
     return output
-
 def main():
         n, m = map(int,input().split())
         data = list(map(int, input().split()))
