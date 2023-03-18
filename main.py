@@ -26,12 +26,12 @@ def main():
     # first line - n and m
     # n - thread count 
     # m - job count
-    n = 0
-    m = 0
+    #n = 0
+   # m = 0
 
     # second line - data 
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
-    data = []
+    #data = []
 
     # TODO: create the function
     
