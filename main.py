@@ -16,11 +16,14 @@ def parallel_processing(n, m, data):
     return output
 
 def main():
-    n, m = map(int,input().split())
-    data = list(map(int, input().split()))
-    output = parallel_processing(n,m,data)
-    for pari in output:
-        print(pari[0],pari[1])
+    try:
+        n, m = map(int,input().split())
+        data = list(map(int, input().split()))
+        output = parallel_processing(n,m,data)
+        for pari in output:
+            print(pari[0],pari[1])
+    except ValueError:
+        print("Kļūda ievadē")
     # TODO: create input from keyboard
     # input consists of two lines
     # first line - n and m
