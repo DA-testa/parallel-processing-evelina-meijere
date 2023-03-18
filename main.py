@@ -6,10 +6,10 @@ def parallel_processing(n, m, data):
     p = [(0, j) for j in range(n)]
     heapq.heapify(p)
 
-    for j ti in enumarate(data):
+    for j op in enumerate(data):
        laiks, b = heapq.heappop(p)
        output.append((b,laiks))
-       heapq.heappush(p,(laiks + ti, thread))
+       heapq.heappush(p,(laiks + op, thread))
           
     return output
 
