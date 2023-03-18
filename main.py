@@ -7,8 +7,9 @@ def parallel_processing(n, m, data):
 
     for i in range(m):
         nakamais = thread.index(min(thread))
-        output.append((nakamais, i))
         thread[nakamais] += laiks[i]
+        output.append((nakamais, i))
+        
 
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
